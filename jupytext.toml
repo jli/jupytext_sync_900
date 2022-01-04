@@ -1,0 +1,5 @@
+# all ipynb -> py with percent format
+formats = "ipynb,py:percent"
+
+# add a suffix:
+# formats = "ipynb,__sidecar.py:percent"
