@@ -1,0 +1,15 @@
+default_language_version:
+  python: python3.9
+
+repos:
+  - repo: https://github.com/mwouts/jupytext
+    rev: v1.13.5
+    hooks:
+      - id: jupytext
+        # this causes jupytext to remove the jupytext metadata from the notebook
+        # which in turn causes pre-commit to always fail (assuming the user 
+        # edited the notebook w/ jupyterlab+jupytext extension, which 
+        # automatically adds the jupytext metadata)
+        args: [--sync]
+        # this doesn't change the notebook, so doesn't cause the issue.
+        # args: [--from, ipynb, --to, __sidecar.py:percent]
