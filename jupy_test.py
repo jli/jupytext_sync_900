@@ -13,4 +13,7 @@
 # ---
 
 # %%
-'new notebook created via jupyterlab. with jupytext.toml, the companion .py is auto-created.'
+print(
+    'new notebook created via jupyterlab. with jupytext.toml, the companion .py is auto-created.\n'
+    + 'making an edit in jupyterlab.'
+)
